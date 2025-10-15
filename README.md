@@ -72,4 +72,12 @@ Rebuild and modifications by **alxkdev**
 
 Special thanks to the MTA:SA development community for tools, documentation and inspiration.
 
+### ⚠️ Legal Disclaimer
+
+This repository is a rebuild and modification of  
+[emre1702 / Ultimate](https://github.com/emre1702/Ultimate),  
+which itself is based on earlier MTA:SA resources.
+
+All original rights remain with their respective authors.
+
 ---
