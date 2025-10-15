@@ -938,7 +938,6 @@
 	<script src="fraktionen\sfpd\need.lua" />
 	
 	<map src="fraktionen\grove\Grove-SF.map" />
-	<!--<map src="fraktionen\grove\Grove-street.map" />-->
 	<script src="fraktionen\grove\grove_cars.lua" />
 	<script src="fraktionen\grove\grove_cars_sf.lua" />
 	<script src="fraktionen\grove\grove_gate.lua" />
