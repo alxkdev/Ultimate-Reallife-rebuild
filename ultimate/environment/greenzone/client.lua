@@ -44,6 +44,7 @@ function stopGreenZone (leaveElement, matchingDimension)
 		toggleControl ("previous_weapon", true)
 		toggleControl ("aim_weapon", true)
 		toggleControl ("vehicle_fire", true)
+		setPedWeaponSlot( leaveElement, 0 )
 	end
 end
 
