@@ -19,20 +19,11 @@ function adminDuty ( player )
 			if clantagwithsquarebracket then
 				name = gettok ( name, 2, string.byte ( "]" ) ) or name -- Damit Clantag nicht mit angezeigt wird auf dem Nummernschild
 			end
-			--admindutyarray.vehicles[player] = createVehicle ( admindutycar, x+2, y, z, rx, ry, rz, name )
-			--setVehicleDamageProof( admindutyarray.vehicles[player], true )
-			--setVehicleColor( admindutyarray.vehicles[player], 255, 255, 0 )
-			--addEventHandler ( "onVehicleStartEnter", admindutyarray.vehicles[player], stopEnterTheAdminCar )
-			--addEventHandler ( "onVehicleExplode", admindutyarray.vehicles[player], adminCarDestroyed )
 		else
 			triggerClientEvent ( player, "notInAdminDuty", player ) 
 			executeCommandHandler ( "meCMD", player, "ist nicht mehr im Admin-Duty" )
 			setElementModel ( player, admindutyarray.skins[player] )
 			admindutyarray.skins[player] = nil
-			--if admindutyarray.vehicles[player] and isElement ( admindutyarray.vehicles[player] ) then
-			--	destroyElement ( admindutyarray.vehicles[player] )
-			--	admindutyarray.vehicles[player] = nil
-			--end
 			removeEventHandler ( "onPlayerQuit", player, quitAdminDuty )
 			removeEventHandler ( "onPlayerWeaponSwitch", player, dontHoldWeaponInAdminDuty )
 		end
@@ -47,10 +38,6 @@ function quitAdminDuty ( )
 	if admindutyarray.skins[source] then
 		admindutyarray.skins[source] = nil
 	end
-	--if admindutyarray.vehicles[source] and isElement ( admindutyarray.vehicles[source] ) then
-	--	destroyElement ( admindutyarray.vehicles[source] )
-	--	admindutyarray.vehicles[source] = nil
-	--end
 end
 
 
@@ -83,10 +70,3 @@ end
 function dontHoldWeaponInAdminDuty ( )
 	setPedWeaponSlot ( source, 0 )
 end
-
---[[addEventHandler( "onClientResourceStart", adminDuty,
-function()
-setWorldSpecialPropertyEnabled("aircars", true)
-setWorldSpecialPropertyEnabled("hovercars", true)
-end
-)--]]

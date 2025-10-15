@@ -30,5 +30,3 @@
 end
 addEvent ( "BurgershotBuy", true )
 addEventHandler ( "BurgershotBuy", getRootElement(), BurgershotBuy_func )
-
--- putFoodInSlot ( player, item )

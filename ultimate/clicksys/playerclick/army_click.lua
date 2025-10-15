@@ -92,9 +92,6 @@
 		gCheck["armyVeh7"] = guiCreateCheckBox(0.7082,0.7123+0.0894*2,0.2754,0.0596,"Hunter",false,true,gWindow["armyClasschose"])
 		guiSetAlpha(gCheck["armyVeh7"],1)
 		guiSetFont(gCheck["armyVeh7"],"default-bold-small")
-		--[[gCheck["armyVeh8"] = guiCreateCheckBox(0.7082,0.7123+0.0894*3,0.2754,0.0596,"Cargobob",false,true,gWindow["armyClasschose"])
-		guiSetAlpha(gCheck["armyVeh8"],1)
-		guiSetFont(gCheck["armyVeh8"],"default-bold-small")]]
 	end
 end
 addEvent ( "showArmyClassChoose", true )

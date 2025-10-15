@@ -371,12 +371,6 @@ function showAdminMenue ()
 			end,
 		false )
 		
-		--[[gButton["offlinewarn"] = guiCreateButton(114,350,78,38,"Offlinewarn",false,gTab[3])
-		addEventHandler ( "onClientGUIClick", gButton["offlinewarn"], 
-			function ()
-				triggerServerEvent ( "executeAdminServerCMD", lp, "warn", guiGetText(gEdit[6]).." "..guiGetText(gMemo["offlineReason"]) )
-			end,
-		false )]]
 		gButton["offlineban"] = guiCreateButton(115,395,78,38,"Offlineban",false,gTab[3])
 		addEventHandler ( "onClientGUIClick", gButton["offlineban"], 
 			function ()
@@ -581,15 +575,6 @@ function showAdminMenue ()
 		false )
 		gEdit[14] = guiCreateEdit(14,185,66,27,"",false,gTab[5])
 		guiSetAlpha(gEdit[14],1)
-		--[[gButton[27] = guiCreateButton(5,266,82,41,"Mute",false,gTab[5])
-		guiSetAlpha(gButton[27],1)
-		addEventHandler ( "onClientGUIClick", gButton[27], 
-			function ()
-				row, column = guiGridListGetSelectedItem(gGrid["plistadmin"])
-				player = guiGridListGetItemText ( gGrid["plistadmin"], row, column )
-				triggerServerEvent ( "executeAdminServerCMD", lp, "mute", player )
-			end,
-		false )]]
 		gButton[28] = guiCreateButton(8,316,82,41,"Chat leeren",false,gTab[5])
 		addEventHandler ( "onClientGUIClick", gButton[28], 
 			function ()

@@ -10,26 +10,6 @@ for i = 1, 7 do
 	setElementInterior ( object, 10 )
 end
 
---[[
-<object id="FDChips1" doublesided="false" model="2754" interior="10" dimension="0" posX="1985.0505371094, 1032.6665039063, 994.29998779297, 0, 0, 90" />
-<object id="FDChips2" doublesided="false" model="2754" interior="10" dimension="0" posX="1985.8994140625, 1032.6665039063, 994.29998779297, 0, 0, 90" />
-<object id="FDBank1" doublesided="false" model="2942" interior="10" dimension="0" posX="1983.1873779297, 1032.4086914063, 994.11163330078, 0, 0, 0" />
-<object id="FDBank2" doublesided="false" model="2942" interior="10" dimension="0" posX="1983.9888916016, 1032.3887939453, 994.11163330078, 0, 0, 0" />
-
-
-roulett1" doublesided="false" model="2992" interior="1" dimension="0" posX="2242.7966308594, 1588.8745117188, 1006.0559692383
-roulett2" doublesided="false" model="2992" interior="1" dimension="0" posX="2241.8732910156, 1614.2368164063, 1006.055847168
-roulett3" doublesided="false" model="2992" interior="1" dimension="0" posX="2230.9973144531, 1614.2836914063, 1006.055847168
-roulett4" doublesided="false" model="2992" interior="1" dimension="0" posX="2231.0014648438, 1588.8724365234, 1006.057800293
-roulettFD" doublesided="false" model="2992" interior="10" dimension="0" posX="1952.3425292969, 1040.5407714844, 992.740234375
-
-
--- Marker
-2242.3874511719, 1587.8371582031, 1005.1605834961
--- Dealer
-2242.2998046875, 1590.8127441406, 1005.8317871094
-]]
-
 roulettBets = {}
 roulettChances = {}
 -- Felder --

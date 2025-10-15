@@ -1,18 +1,4 @@
-﻿--[[
-string.find ( "", "|" )
-
-http://metafiles.gl-systemhaus.de/hr/youfm_rock.m3u
-http://metafiles.gl-systemhaus.de/hr/youfm_2.m3u
-http://listen.technobase.fm/dsl.pls
-
-index.val:
-	[Name]
-[Name].val
-	URL
-
-    0: Radio Off
-]]
-radioChannelsName = {}
+﻿radioChannelsName = {}
 	radioChannelsName[0] = "Radio aus"
 
 radioChannelNameRenderTimer = false

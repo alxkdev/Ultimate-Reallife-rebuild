@@ -285,43 +285,6 @@ function bonusBuy_func ( player, bonus )
 			end
 		elseif bonus == " Fahrzeugslots" then
 			outputChatBox ( "Fahrzeugslots bitte im Rathaus kaufen!", player, 255, 0, 0 )
-			--[[if vioGetElementData ( player, "carslotupgrade3" ) == 1 then
-				outputChatBox ( "Diesen Bonus hast du bereits gekauft!", player, 125, 0, 0 )
-			else
-				local points = vioGetElementData ( player, "bonuspoints" )
-				if vioGetElementData ( player, "carslotupgrade" ) == "none" then
-					if points >= 50 then
-						outputChatBox ( "Du hast den Bonus gekauft und kannst nun maximal 5 Fahrzeuge besitzen.", player, 0, 125, 0 )
-						vioSetElementData ( player, "carslotupgrade", "buyed" )
-						vioSetElementData ( player, "bonuspoints", bonuspoints - 50 )
-						dbExec ( handler, "UPDATE ?? SET ??=? WHERE ??=?", "bonustable", "CarslotUpgrades", "buyed", "UID", playerUID[pname] )
-						vioSetElementData ( player, "maxcars", 5 )
-					else
-						outputChatBox ( "Du hast nicht genug Bonuspunkte!", player, 125, 0, 0 )
-					end
-				elseif vioGetElementData ( player, "carslotupgrade2" ) == 0 then
-					if points >= 60 then
-						outputChatBox ( "Du hast den Bonus gekauft und kannst nun maximal 7 Fahrzeuge besitzen.", player, 0, 125, 0 )
-						vioSetElementData ( player, "carslotupgrade2", 1 )
-						vioSetElementData ( player, "bonuspoints", bonuspoints - 60 )
-						dbExec ( handler, "UPDATE ?? SET ??=? WHERE ??=?", "bonustable", "CarslotUpdate2", 1, "UID", playerUID[pname] )
-						vioSetElementData ( player, "maxcars", 7 )
-					else
-						outputChatBox ( "Du hast nicht genug Bonuspunkte!", player, 125, 0, 0 )
-					end
-				elseif vioGetElementData ( player, "carslotupgrade3" ) == 0 then
-					if points >= 75 then
-						outputChatBox ( "Du hast den Bonus gekauft und kannst nun maximal 10 Fahrzeuge besitzen.", player, 0, 125, 0 )
-						vioSetElementData ( player, "carslotupgrade3", 1 )
-						vioSetElementData ( player, "bonuspoints", bonuspoints - 75 )
-						dbExec ( handler, "UPDATE ?? SET ??=? WHERE ??=?", "bonustable", "CarslotUpdate3", 1, "UID", playerUID[pname] )
-						vioSetElementData ( player, "maxcars", 10 )
-					else
-						outputChatBox ( "Du hast nicht genug Bonuspunkte!", player, 125, 0, 0 )
-					end
-				end
-				triggerClientEvent ( player, "refreshBonus", player )
-			end]]
 		elseif bonus == " Cluckin Bell" then
 			if vioGetElementData ( player, "bonusskin1" ) ~= "none" then
 				if not getPedOccupiedVehicle ( player ) then

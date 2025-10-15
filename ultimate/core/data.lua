@@ -104,12 +104,7 @@ end
 addEventHandler ( "onElementDestroy", getRootElement(), freeElementData )
 
 function findPlayerByName( playerPart )
-	
-	--if playerPart == nil then
-	
-	--	return false
 		
-	--elseif getPlayerFromName( playerPart ) and isElement(getPlayerFromName( playerPart )) then
 	local pl = getPlayerFromName ( playerPart )
 	
 	if isElement(pl) then

@@ -26,7 +26,6 @@
 		outputChatBox ( "acc" )
 	end
 end
---addCommandHandler ( "vtuning", vtuning )
 
 
 function giveSportmotorUpgrade ( veh )

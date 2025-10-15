@@ -175,8 +175,6 @@ function smokeCigarett ( player )
 		
 		triggerClientEvent ( player, "showAddictInfo", player, true )
 		
-		--toggleAllControls ( player, false, true, true )
-		
 		if vioGetElementData ( player, "cigarettFlushPoints" ) >= 2 * vioGetElementData ( player, "cigarettAddictPoints" )  / addictLevelDivisors[1] + 1 then
 			setTimer ( setPedChoking, 2750, 1, player, true )
 			setTimer ( setPedChoking, 2750 + cigarChokeTime, 1, player, false )
@@ -257,18 +255,7 @@ function getDrugStrength ( player )
 	
 	return strength
 end
---[[
-Old
-function hasDrunkToMuch ( player )
 
-	local curAddict = vioGetElementData ( player, "alcoholFlushPoints" ) / addictLevelDivisors[2] + 1
-	local curFlush = vioGetElementData ( player, "alcoholAddictPoints" )
-	if curFlush > curAddict * 0.75 then
-		return true
-	end
-	return false
-end
-]]
 function hasDrunkToMuch ( player )
 
 	local curAddict = vioGetElementData ( player, "alcoholFlushPoints" ) / addictLevelDivisors[2] + 1

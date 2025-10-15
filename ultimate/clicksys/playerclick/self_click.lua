@@ -232,22 +232,6 @@ function ShowSelfClickMenue_func()
 		gButtons["selfemotes"] = guiCreateButton(160, 0, 50, 50, " ", false, gWindows["selfclick"])
 		guiSetAlpha(gButtons["selfemotes"], 0)
 		
-		
-		
-		--[[gWindows["selfclick"] = guiCreateWindow(screenwidth/2-165,0,329,114,"Eigenmenue",false)
-		
-		gButtons["selfstatus"] = guiCreateButton(13,29,71,32,"Status",false,gWindows["selfclick"])
-		gButtons["selfoptions"] = guiCreateButton(13,71,71,32,"Optionen",false,gWindows["selfclick"])
-		
-		gButtons["selfadmin"] = guiCreateButton(89,29,71,32,"Admin",false,gWindows["selfclick"])
-		gButtons["selfcancel"] = guiCreateButton(89,71,71,32,"Abbrechen",false,gWindows["selfclick"])
-		
-		gButtons["selfhandy"] = guiCreateButton(167,29,71,32,"Handy",false,gWindows["selfclick"])
-		gButtons["selffriendlist"] = guiCreateButton(167,71,71,32,"Friendlist",false,gWindows["selfclick"])
-		
-		gButtons["selfnotes"] = guiCreateButton(245,29,71,32,"Notizen",false,gWindows["selfclick"])
-		gButtons["selfemotes"] = guiCreateButton(245,71,71,32,"Emotes",false,gWindows["selfclick"])]]
-		
 		addEventHandler("onClientGUIClick", gButtons["selfadmin"], SelfAdminBtn, false)
 		addEventHandler("onClientGUIClick", gButtons["selfcancel"], SelfCancelBtn, false)
 		addEventHandler("onClientGUIClick", gButtons["selfoptions"], SelfOptionBtn, false)
@@ -274,25 +258,10 @@ function ShowSelfClickMenue_func()
 				showEmoteList ()
 			end, false
 		)
-		
-		--guiWindowSetSizable(gWindows["selfclick"],false)
-		--guiWindowSetMovable(gWindows["selfclick"],false)
-		--guiSetAlpha(gWindows["selfclick"],1)
+
 	end
 	guiSetText ( gButtons["selfstatus"], "Status" )
 	guiStaticImageLoadImage ( img_stats, "images/self/status.png" )
 end
 addEvent ( "ShowSelfClickMenue", true)
 addEventHandler ( "ShowSelfClickMenue", getLocalPlayer(),  ShowSelfClickMenue_func)
-
---[[addCommandHandler( "mtest", function ()
-	for i = 50, 75, 1 do
-		guiSetSize ( img_admin, i, i, false )
-    end
-	
-	setTimer(function()
-		for i = 75, 50, 1 do
-			guiSetSize ( img_admin, i, i, false )
-		end
-	end, 750, 1)
-end)]]

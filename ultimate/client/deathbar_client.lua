@@ -23,8 +23,6 @@
 		guiLabelSetHorizontalAlign(gLabel["deathbarText2"],"left",false)
 		guiSetFont(gLabel["deathbarText2"],"default-bold-small")
 	end
-	--setTimer ( updateDeathBar_func, time*10, 100 )
-	--setTimer ( hideUpdateBar, time*1000, 1 )
 end
 addEvent ( "showProgressBar", true )
 addEventHandler ( "showProgressBar", getRootElement(), showProgressBar_func )

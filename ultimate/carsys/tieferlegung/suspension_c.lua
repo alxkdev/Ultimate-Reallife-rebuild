@@ -8,12 +8,7 @@ function BaixarCarro ( )
 
 			local seatvehicle = getVehicleOccupant(vehicle,0)
 			if (seatvehicle) then
-				-- Falls es während der Fahrt nicht gehen soll --
-				--if (getElementVelocity(vehicle) == 0) and (movewith == "true") then -- Get if car is stopped
-					EscondeMostra()
-				--else
-				--	infobox ( "Nicht während\nder Fahrt erlaubt!", 3000, 255, 0, 0 )
-				--end
+				EscondeMostra()
 			else
 				infobox ( "Nur für den\nFahrer erlaubt!", 3000, 255, 0, 0 )
 			end

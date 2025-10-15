@@ -1,12 +1,4 @@
-﻿--[[function magnet (source, commandName)
-
-	local x, y, z = getElementPosition ( source )
-	local veh = createVehicle ( 417, x, y, z )
-	setVehicleAsMagnetHelicopter (  veh )
-end
-addCommandHandler ("magnet",magnet)]]
-
-function setVehicleAsMagnetHelicopter ( veh )
+﻿function setVehicleAsMagnetHelicopter ( veh )
 
 	if getElementModel ( veh ) == 417 then
 		local x, y, z = getElementPosition ( veh )

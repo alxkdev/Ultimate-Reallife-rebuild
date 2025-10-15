@@ -116,19 +116,6 @@ function showBaumarktMenue ( hit )
 			guiLabelSetHorizontalAlign(label,"left",false)
 			guiSetFont(label,"default-bold-small")
 			
-			--[[gButton[8] = guiCreateButton(303,214,133,67,"",false,gWindow["baumarkt"])
-			guiSetAlpha(gButton[8],1)
-			local btn = gButton[8]
-			clickedbut = 2103
-			local img = guiCreateStaticImage(8,6,50,50,"images/inventory/placeable/hi_fi.png",false,btn)
-			guiSetAlpha(img,1)
-			local label = guiCreateLabel(63,10,65,52,"Stereo-\nanlage\n\n"..placeablePrices[clickedbut].." $",false,btn)
-			guiSetAlpha(label,1)
-			guiLabelSetColor(label,255,255,255)
-			guiLabelSetVerticalAlign(label,"top")
-			guiLabelSetHorizontalAlign(label,"left",false)
-			guiSetFont(label,"default-bold-small")]]
-			
 			gRadio["colorSelect1"] = guiCreateRadioButton(151,237,73,23,"Gruen",false,gWindow["baumarkt"])
 			guiSetAlpha(gRadio["colorSelect1"],1)
 			guiSetFont(gRadio["colorSelect1"],"default-bold-small")

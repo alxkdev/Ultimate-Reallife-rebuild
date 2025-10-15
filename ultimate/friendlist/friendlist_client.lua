@@ -197,21 +197,6 @@ function showFriendlistSelf()
 				deleteFriend( row )
 			end
 		)
-		--[[addEventHandler("onClientGUIClick", gButton["callFriend"],
-			function()
-				outputChatBox ( "NR: "..tonumber ( gLabel["friendHandyNRValue"] ) ) -- DEBUG
-				triggerServerEvent ( "callSomeone", getLocalPlayer(), getLocalPlayer(), tonumber ( gLabel["friendHandyNRValue"] ) )
-				SelfCancelBtn ()
-			end
-		)
-		addEventHandler("onClientGUIClick", gButton["smsFriend"],
-			function()
-				guiSetVisible ( gWindow["friendlistMenue"], false )
-				local smsnr = tonumber ( gLabel["friendHandyNRValue"] )
-				outputChatBox ( "NR: "..smsnr ) -- DEBUG
-				handysmsschreiben ( smsnr )
-			end
-		)]]
 	end
 	deleteFriendLabels()
 	fillFriendlist()

@@ -61,7 +61,6 @@ function showPlayerList ()
 	else
 		local label, img
 		
-		--gImage["playerList"] = guiCreateStaticImage(screenwidth/2-playerListWidth/2,screenheight/2-playerListHeight/2,playerListWidth,playerListHeight,"images/colors/c_black.jpg",false)
 		gImage["playerList"] = guiCreateStaticImage(screenwidth/2-playerListWidth/2,screenheight/2-playerListHeight/2,playerListWidth,playerListHeight,"images/scoreboard.png",false)
 		guiSetAlpha(gImage["playerList"],0.9)
 		
@@ -208,10 +207,6 @@ end
 
 function reAdjustPlayerListScollBar ()
 
-	--[[pxPerPlayer = playerListHeight / ( playerCount )
-	barSize = maxPlayersInCurList / playerCount * playerListHeight
-	if barSize > playerListHeight then
-	]]
 	pxPerPlayer = 310 / ( playerCount )
 	barSize = maxPlayersInCurList / playerCount * 310
 	if barSize > 310 then
@@ -220,8 +215,6 @@ function reAdjustPlayerListScollBar ()
 	else
 		barYPos = ( curPlayerListPosition - 1 ) * ( pxPerPlayer )
 	end
-	--guiSetSize ( gImage["playerListBarPull"], 17, barSize, false )
-	--guiSetPosition ( gImage["playerListBarPull"], 0, barYPos, false )
 end
 
 function reFillPlayerList ()

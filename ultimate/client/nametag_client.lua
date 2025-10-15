@@ -84,14 +84,6 @@ function getBestFontSize ( size )
 	local s = {guiGetScreenSize()}
 	return math.abs ( ( s[1]/1920-1 + s[2]/1080-1 ) * 0.3*size + size )
 
-	--[[local sx, sy = 1920, 1080
-	local s = {guiGetScreenSize()}
-
-	local fontsizex = (size/sx)*s[1]
-	local fontsizey = (size/sy)*s[2]
-	
-	local mittelwert = (fontsizex+fontsizey)/2
-	return mittelwert]]
 end
 
 		

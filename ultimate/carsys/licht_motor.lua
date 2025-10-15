@@ -58,17 +58,6 @@ function toggleVehicleEngine ( player, key, state )
 			if getVehicleEngineState ( veh ) then
 				setVehicleEngineState ( veh, false )
 				vioSetElementData ( veh, "engine", false )
-				--[[local x, y, z = getElementPosition ( veh )
-				local sphere = createColSphere ( x, y, z, 3 )
-				local vehicles = getElementsWithinColShape ( sphere, "vehicle" )
-				destroyElement ( sphere )
-				for key, index in pairs ( vehicles ) do
-					if getElementModel ( index ) == 443 then
-						attachElementsInVeryCorrectWay ( veh, index )
-						vioSetElementData ( veh, "attachedToPacker", index )
-						break
-					end
-				end]]
 			-- Falls der Motor NICHT läuft, dem Spieler das Fahrzeug jedoch gehört
 			elseif vioGetElementData ( veh, "owner" ) == getPlayerName ( player ) then
 				-- Falls das Fahrzeug noch genug Benzin hat
@@ -78,9 +67,6 @@ function toggleVehicleEngine ( player, key, state )
 					if not vioGetElementData ( veh, "timerrunning" ) then
 						setVehicleNewFuelState ( veh )
 						vioSetElementData ( veh, "timerrunning", true )
-						--[[if vioGetElementData ( veh, "attachedToPacker" ) then
-							detachElements ( veh, vioGetElementData ( veh, "attachedToPacker" ) )
-						end]]
 					end
 				else
 					outputChatBox ( "Das Fahrzeug hat nicht mehr genug Benzin - du kannst an einer Tankstelle einen Reservekannister erwerben!", player, 125, 0, 0 )
@@ -94,9 +80,6 @@ function toggleVehicleEngine ( player, key, state )
 						setVehicleNewFuelState ( veh )
 						vioSetElementData ( veh, "timerrunning", true )
 					end
-					--[[if vioGetElementData ( veh, "attachedToPacker" ) then
-						detachElements ( veh, vioGetElementData ( veh, "attachedToPacker" ) )
-					end]]
 				end
 			elseif vioGetElementData ( veh, "ownerfraktion" ) then
 				local car_acess
@@ -125,32 +108,6 @@ function toggleVehicleEngine ( player, key, state )
 					end
 				end
 			end
-			--[[if not vioGetElementData ( veh, "owner" ) then
-				if getVehicleEngineState ( veh ) then
-					setVehicleEngineState ( veh, false )
-					vioSetElementData ( veh, "engine", false )
-				else
-					setVehicleEngineState ( veh, true )
-					vioSetElementData ( veh, "engine", true )
-				end
-			elseif vioGetElementData ( veh, "owner" ) and vioGetElementData ( veh, "owner" ) ~= getPlayerName ( player ) then
-				if getVehicleEngineState ( veh ) then
-					setVehicleEngineState ( veh, false )
-					vioSetElementData ( veh, "engine", false)
-				end
-			else
-				if getVehicleEngineState ( veh ) and ( ( noengine[getElementModel ( veh )] and vioGetElementData ( veh, "owner" ) ) or not noengine[getElementModel ( veh )] ) then
-					setVehicleEngineState ( veh, false )
-					vioSetElementData ( veh, "engine", false)
-				elseif not getVehicleEngineState ( veh ) and tonumber ( vioGetElementData ( veh, "fuelstate" ) ) > 0 then
-					setVehicleEngineState ( veh, true )
-					vioSetElementData ( veh, "engine", true )
-					if not vioGetElementData ( veh, "timerrunning" ) then
-						setVehicleNewFuelState ( veh )
-						vioSetElementData ( veh, "timerrunning", true )
-					end
-				end
-			end]]
 		end
 	end
 end

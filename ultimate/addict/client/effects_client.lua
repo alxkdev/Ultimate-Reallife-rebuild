@@ -75,7 +75,6 @@ function drugEffectRepeat ()
 	end
 	local count = math.floor ( drugSettings.interval / 50 )
 	setTimer ( drugFalshEffect, 50, count )
-	setTimer ( drugAiming, 50, count )
 	if drugRunSwitch then
 		drunkDiveMode ()
 	end
@@ -142,20 +141,6 @@ function deactivateDrugEffect_func ()
 end
 addEvent ( "deactivateDrugEffect", true )
 addEventHandler ( "deactivateDrugEffect", getRootElement(), deactivateDrugEffect_func )
-
-function drugAiming ()
-
-	if getPedControlState ( "aim_weapon" ) then
-		--[[local x, y, z = getPedTargetEnd ( lp )
-		local drugAimS = drugSettings.aimDisturbe * strenght
-		x = x + math.random ( -drugAimS, drugAimS )
-		y = y + math.random ( -drugAimS, drugAimS )
-		z = z + math.random ( -drugAimS, drugAimS )
-		--triggerServerEvent ( "drugAimTarget", lp, x, y, z )
-		--setPedCameraRotation ( lp, float cameraRotation )
-		setPedRotation ( lp, getPedRotation ( lp ) + 2 )]]
-	end
-end
 
 function drunkDiveMode ()
 

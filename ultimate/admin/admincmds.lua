@@ -15,9 +15,6 @@ local adminLevels = {
 }
 donatorMute = {}
 local adminmarks = {}
-
--- Funktionen 
-
 local pack_cmds = {}
 pack_cmds["msg"] = true
 pack_cmds["pm"] = true
@@ -29,8 +26,6 @@ function blockParticularCmds ( cmd )
 	end
 	
 end
-
---
 
 function blockParticularCmdsJoin ( )
 	addEventHandler( "onPlayerCommand", source, blockParticularCmds )	

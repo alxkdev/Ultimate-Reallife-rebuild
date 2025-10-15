@@ -1,8 +1,6 @@
 ﻿local isintuninggarage = false
 
 function showPremiumWindow ()
-
-	--if getElementData ( lp, "premium" ) then
 		if gWindow["tuningPremium"] then
 			guiSetVisible ( gWindow["tuningPremium"], true )
 		else
@@ -46,7 +44,6 @@ function showPremiumWindow ()
 		guiScrollBarSetScrollPosition ( blueScroll, blue )
 		removeEventHandler ( "onClientGUIClick", getRootElement(), partChange )
 		addEventHandler ( "onClientGUIClick", getRootElement(), partChange )
-	--end
 end
 
 function showPlateWindow ()

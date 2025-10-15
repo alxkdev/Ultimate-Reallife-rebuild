@@ -23,7 +23,6 @@
 	<!-- Client-Settings -->
 	<script src="clientdata\clientdata_client.lua" type="client"/>
 	<script src="clientdata\clientdata_load.lua" type="client"/>
-	<script src="clientdata\clientdata_server.lua" type="server"/>
 	
 	<script src="script.lua" />
 	<script src="usefull\utility.lua" />
@@ -33,7 +32,6 @@
 	
 	<script src="core\clear.lua" />
 	<script src="core\data.lua" />	
-	<script src="core\license.lua" />
 	
 	<script src="settings\handling_settings_server.lua" type="server"/>
 	<script src="settings\settings_client.lua" type="client"/>
@@ -634,9 +632,7 @@
 	<script src="admin\allround_log.lua" type="server" />
 	
 	<script src="anticheat\anticheat_client.lua" type="client" />
-	<script src="anticheat\anticheat_server.lua" />
 	<script src="anticheat\ban.lua" />
-	<script src="anticheat\shield_server.lua" />
 	<export function="banVioShieldPlayer" type="server"/>
 	
 	<script src="anzeigen\hud.lua" type="client"/>
@@ -670,7 +666,6 @@
 	<script src="carsys\bikefalloff.lua" type="client"/>
 	
 	<script src="carsys\carcommands.lua" />
-	<script src="carsys\outsource_mysql.lua" />
 	
 	<script src="carsys\codriver\codriver_client.lua" type="client"/>
 	<script src="carsys\codriver\codriver_server.lua" />
@@ -724,14 +719,12 @@
 	<script src="carsys\shamal_server.lua" />
 	<script src="carsys\shamal_client.lua" type="client"/>
 	
-	<script src="carsys\cosight_client.lua" type="client" />
 	<script src="carsys\ghostcar_client.lua" type="client"/>
 	<script src="carsys\ghostcar_server.lua" type="server"/>
 	<script src="carsys\helimagnet.lua" />
 	<script src="carsys\helimagnet_client.lua" type="client" />
 	<script src="carsys\licenses\vehiclecheck.lua" />
 	<script src="carsys\licht_motor.lua" />
-	<script src="carsys\noobcars\noobcars.lua" />
 	<script src="carsys\radio.lua" type="client"/>
 	<script src="carsys\stuntcam_client.lua" type="client"/>
 	<script src="carsys\tacho\speedo.lua" type="client" />
@@ -751,7 +744,6 @@
 	
 	<!--- Casino -->
 	<script src="casino\casino_client.lua" type="client" />
-	<script src="casino\casino_server.lua" type="server" />
 	
 	<script src="casino\cardgames\cardgames_utility.lua" type="server" />
 	<script src="casino\cardgames\cardgames_utility.lua" type="client" />

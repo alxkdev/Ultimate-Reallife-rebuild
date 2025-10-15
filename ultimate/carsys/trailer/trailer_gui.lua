@@ -80,4 +80,3 @@ function showWohnwagenMenue ( hit, dim )
 	end
 end
 addEventHandler ( "onClientMarkerHit", trailerMarker, showWohnwagenMenue )
---<marker id="marker (cylinder) (1)" type="cylinder" color="#0000ff99" size="3" interior="0" dimension="0" posX="-911.3271484375" posY="-486.00863647461" posZ="24.896272659302" rotX="0" rotY="0" rotZ="0" />

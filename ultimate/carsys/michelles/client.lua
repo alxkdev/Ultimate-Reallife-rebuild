@@ -117,5 +117,3 @@ function showSpezialLack()
 		triggerServerEvent("closeSpezialLack", getLocalPlayer())
 	end)
 end
---addEvent( "showSpezialLack", true )
---addEventHandler( "showSpezialLack", getRootElement(), showSpezialLack )
