@@ -18,8 +18,6 @@
 	<script src="mysql\mysql_start.lua" />
 	<script src="mysql\mysql_functions.lua" />
 	
-	<script src="hook_server.lua" />
-	<script src="hook_client.lua" />
 	<script src="core\data_client.lua" type="client"/>	
 	
 	<!-- Client-Settings -->
