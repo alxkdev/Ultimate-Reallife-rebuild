@@ -56,11 +56,6 @@
 	
 	<script src="client\definitions_client.lua" type="client" />
 	
-	<!--- <script src="blips\imagelib.lua" type="client" />
-	<script src="blips\blipstreamer_client.lua" type="client" />
-	<script src="blips\customblips.lua" type="client" />
-	<script src="blips\utility.lua" type="client" /> -->
-	
 	<!-- TESTMODE - Wichtig - Unbedingt rausnehmen!!! -->
 	<!-- <script src="usefull\dev_commands.lua" />
 	<script src="usefull\dev_client.lua" type="client" /> -->
