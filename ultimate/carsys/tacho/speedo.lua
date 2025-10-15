@@ -96,6 +96,7 @@ end
 
 addEventHandler("onClientVehicleEnter", getRootElement(), function(enterer)
 	if (enterer == getLocalPlayer()) then
+		removeEventHandler("onClientRender",getRootElement(), renderTacho)
 		addEventHandler("onClientRender",getRootElement(), renderTacho)
 	end
 end
