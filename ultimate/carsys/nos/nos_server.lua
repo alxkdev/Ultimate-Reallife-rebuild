@@ -4,8 +4,10 @@
 	if veh then
 		local nos = getVehicleUpgradeOnSlot ( veh, 8 )
 		removeVehicleUpgrade ( veh, nos )
-		if getElementData ( veh, "nitro" ) > 0 then
-			addVehicleUpgrade ( veh, nos )
+		if getVehicleUpgradeOnSlot ( veh, 8 ) then
+			if getElementData ( veh, "nitro" ) > 0 then
+				addVehicleUpgrade ( veh, nos )
+			end
 		end
 	end
 end
