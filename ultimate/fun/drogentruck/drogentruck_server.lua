@@ -1,5 +1,5 @@
 ﻿local drogentruckEntrance = createMarker ( 2342.9963, 2773.7939, 9.7203,  "cylinder",  2,  getColorFromString ( "#FE000199" ) )
-local drogentruckBlip = createBlip ( 2342.9963, 2773.7939, 9.7203, 51, 1 ) 
+local drogentruckBlip = createBlip ( 2342.9963, 2773.7939, 9.7203, 51, 1, 0, 0, 0, 255, 0, 200 )
 -- TODO | KOORDINATEN ÄNDERN! --
 local drogentruckDeliver = createMarker ( -1082.6046, -1649.0123, 76.36, "checkpoint", 7, 0, 125, 0 )
 local drogentruckDeliverBlip = createBlip ( -1082.6046, -1649.0123, 76.36, 19, 2, 255, 0, 0, 255, 0, 99999.0, getRootElement() )
