@@ -1339,8 +1339,6 @@
 
 	<script src="ticketsystem\Ticketclient.lua" type="client" />
 	<script src="ticketsystem\Ticketserver.lua" />
-
-	<!--<script src="trains\trams.lua" /> -->
 	
 	<script src="tutorial\tutorial_ai_client.lua" type="client"/>
 	<script src="tutorial\tutorial_bubble_client.lua" type="client"/>
